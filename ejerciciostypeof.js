@@ -1,3 +1,5 @@
+
+
 variableFalse = false;
 variableTrue = true;
 variableCero = 0;
@@ -46,6 +48,8 @@ console.log(typeof(variableNull)); //object
 
 //Ejercicio de la jugueteria
 
+
+
 console.log("Aquí inicia el ejercicio de Tipo de Datos");
 
 pesoPayasog = 112;
@@ -59,5 +63,8 @@ numeroDeMuñecas = 14;
 pesoPaquete = (pesoPayasog * numeroPayasos) + (pesoMuñecag * numeroDeMuñecas);
 
 console.log("El peso total del paquete es  : "+ pesoPaquete + " gramos");
+
+
+
 
 

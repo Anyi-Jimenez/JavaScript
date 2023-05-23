@@ -1,4 +1,7 @@
 //alert("Estoy vivoooooooo");
+
+console.log("Status de la mamá de Bambi " + mamaDeBambiViva);
+
 //Así se ponen los comentarios
 /*
 Este
@@ -58,8 +61,9 @@ Se llaman primitivos porque son datos que no pueden ser modificados, ya vienen c
 
 -NaN (Not a Number): Sive para representar un valor que no es un número. Lo obtenemossi hacemos una operación con una variable que no es un número o con una operación que no es posible.
 
-
 -Symbol
+
+
 -Object (No es primitivo)
 
 */
@@ -119,7 +123,147 @@ console.log(typeof(edadDeFelipe));//number
 console.log(typeof(operacionMatematica));//number
 
 
+/* Tipos de variables
 
+En JS tenemos tres tipos principales de variables:
+
+-var: Era la forma principal de declarar variables. Es una variable muy flexble, tiene un scope (alcance) global, esto es, que el valor de esta variable esta disponible en todo el programa.
+
+
+-let: Lo usamos para limitar el alcance de nuestras variables (scope); y se limita a un bloque de código o expresión (meter a la mamá de bambi en una cajita), es una variable local.
+
+
+-const: Se usan para declarar una variable con un valor constante o inmutable (que no cambia).
+
+
+*/
+
+//En este caso la mamá de BAbi esta visible desde cualquier lugar del programa
+
+var mamaDeBambiViva = false;
+var cazador = "listo para disparar"
+
+let nomb = "Felipe Maqueda";
+
+const pi = 3.1416
+
+/*
+
+Funciones
+
+Una función es una agrupación de instrucciones que se ejecutan cuando se llama o se invoca. Las funciones pueden recibir parámetros y devolver valores. Es importante mencionar que las funciones no se ejecutan sino que se invocan.
+
+Parámetros = variables que necesitamos para alimentar mi función (todas las variables se tienen que ejecutar).
+
+Ejemplo: limón, azúcar, vasito de agua, cucharita, hielos, agua.
+
+Nombre para la función= Con el nombre nosotros vamos a poder activar o invocar la función (básicamente, tenemos que llamarla para que funcione).
+
+Ejemplo: PrepararAguitaDeLimon
+
+
+Operaciones: Conjunto de instrucciones (en orden específico).
+
+Ejemplo: 1) Cortar el limón, 2)Exprimir el limon, tc
+
+Resultado: Las funciones generalmente deben tener un resultado
+
+Ejemplo: Vasito de agua de limón
+
+
+
+*/
+
+//1- Creamos la función con la palabra reservada function y le ponemos un nombre. Después, abriremos y cerramos paréctesis y abrimos y cerramos y cerraremos llaves {}.
+
+//los paréntesis son para nuestros parámetros o argumentos, y las llaves para delimitar el bloque o la funcion.
+
+//2- Ponemos nuestros parámetros (variables) dentro de los paréntesis
+
+//3- Poner las instrucciones dentro de las llaves
+
+//4- Invocar la función escibiendo su nombre y abimos y cerramos paréntesis.
+
+/*
+
+    var limon = "limón";
+    var agua = "agua";
+    var hielos = "hielos";
+    var azucar = "azucar";
+    var vaso = "vaso";
+    var cuchara = "cuchara";
+
+
+    */
+
+    
+    
+
+function PrepararAguitaDeLimon(limon, agua, hielos, azucar, vaso, cuchara) {
+
+    var limon = "limón";
+    var agua = "agua";
+    var hielos = "hielos";
+    var azucar = "azucar";
+    var vaso = "vaso";
+    var cuchara = "cuchara";
+
+    
+
+    console.log("cortar el limon" + limon);
+    console.log("Exprimir el limon");
+    console.log("Agregar el jugo de limon al vaso" + vaso);
+    console.log("agregamos los hielos al vaso" + hielos);
+    console.log("Agregamos el agua al vaso" + agua); 7
+    console.log("Endulzamos al gusto" + azucar);
+    console.log("Mezclar y disfrutar" + cuchara);
+
+    var cuchara = "tenedor"
+
+    console.log(cuchara);
+
+
+}
+
+
+PrepararAguitaDeLimon();
+
+
+
+
+//Ejemplo de las 3 foras de agregar parámetros a las funciones
+
+function suma (a,b){ //valores estan en undefined
+    var a = 5; //cambio el undefined por 5
+    var b = 7; //cambio el undefined por el 7
+
+    operacion = a+b; //hago mi suma utilizando lso dos valores
+
+    console.log(operacion); //imprimir mi operacion
+}
+
+suma(); //Invocamos la función
+
+//Segunda forma: usando parametros dentro de parentesis, ya inicializados
+
+function resta (a=8, b=5){
+    operacion =a-b;
+    console.log(operacion);
+}
+
+resta();
+
+//Tercera forma: Inicializando valores dentro de la invocacion
+
+function multiplicacion (a,b){
+    operacion = a*b;
+    console.log(operacion);
+    suma();
+}
+
+multiplicacion(3,9);
+
+multiplicacion(3); //Se imprime Nan porque nos falta un parámetro
 
 
 
