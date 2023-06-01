@@ -186,4 +186,7 @@ console.log("Suma= " , valor1 + valor2);
 
 console.log("Suma= " , valor1 + valor2);
 
+//cabe mencionar que aunque la variable es let se le suma o se le resta el valor y se guardan en las constantes valor1 y valor2, cuando se utiliza const marca error
 
+console.log("Incremento= " , ++valor1);
+console.log("Decremento= " , --valor2);
