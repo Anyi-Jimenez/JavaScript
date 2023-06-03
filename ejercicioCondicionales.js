@@ -129,43 +129,43 @@ if (numeroAevaluar <= 0){
 
 
 
-function par (numeroAevaluar ){
+function par(numeroAevaluar) {
 
     var evaluacionPar
-    
+
     evaluacionPar = numeroAevaluar % 2
 
 
-    if (evaluacionPar==0){
-        return   console.log("El número " + numeroAevaluar + " no es un número primo, ya que es un número par")
+    if (evaluacionPar == 0) {
+        return console.log("El número " + numeroAevaluar + " no es un número primo, ya que es un número par")
 
     }
 
     else {
-        divisores (numeroAevaluar);
+        divisores(numeroAevaluar);
     }
 
-  
+
 }
 
 
 
-function divisores (numeroAevaluar){
+function divisores(numeroAevaluar) {
 
     var divisores = 3
-        
-    while(divisores < (Math.round(numeroAevaluar/2)) & evaluacion != 0){
+
+    while (divisores < (Math.round(numeroAevaluar / 2)) & evaluacion != 0) {
         var evaluacion
         evaluacion = numeroAevaluar % (divisores)
 
-       divisores ++
+        divisores++
 
-}
+    }
 
-if (evaluacion == 0) {
-    console.log("El número ", numeroAevaluar, "no es un número primo")
-}else {
-    console.log("El número ", numeroAevaluar, "es un número primo")
+    if (evaluacion == 0) {
+        console.log("El número ", numeroAevaluar, "no es un número primo")
+    } else {
+        console.log("El número ", numeroAevaluar, "es un número primo")
 
 
     }
@@ -175,21 +175,27 @@ if (evaluacion == 0) {
 
 var numeroAevaluar = prompt("Ingresa el número que se va a evaluar si es número primo o no");
 
-if (numeroAevaluar <= 0){
+if (numeroAevaluar <= 0) {
     console.log("El número ", numeroAevaluar, "no es un número primo, por definición. La definición de «número primo» dice que «Un número entero mayor que 1 ");
-} else {if (numeroAevaluar == 1){
-    console.log("Por definición. La definición de «número primo» dice que «Un número entero mayor que 1 se denomina número primo si sólo tiene como divisores positivos (factores) a sí mismo y a la unidad». Así que el 1 queda automáticamente excluído.");
-}else  {if (numeroAevaluar !=2){
+} else {
+    if (numeroAevaluar == 1) {
+        console.log("Por definición. La definición de «número primo» dice que «Un número entero mayor que 1 se denomina número primo si sólo tiene como divisores positivos (factores) a sí mismo y a la unidad». Así que el 1 queda automáticamente excluído.");
+    } else {
+        if (numeroAevaluar != 2) {
 
-    par(numeroAevaluar);
+            par(numeroAevaluar);
 
-} else{
+        } else {
 
-    console.log("El número ", numeroAevaluar, "es un número primo")
+            console.log("El número ", numeroAevaluar, "es un número primo")
+
+        }
+
+
+    }
 
 }
-   
 
-}
 
-}
+
+
